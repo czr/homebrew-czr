@@ -2,8 +2,8 @@ class McpFilesystemServer < Formula
   desc "MCP Filesystem Server"
   homepage "https://github.com/mark3labs/mcp-filesystem-server"
   url "https://github.com/mark3labs/mcp-filesystem-server/archive/refs/tags/v0.9.0.tar.gz"
-  sha256 "REPLACE_WITH_ACTUAL_SHA256"
-  license "MIT" # Replace with actual license if different
+  sha256 "da2c39dca2e3c08531f9d6763d651cf0bfe8be9d095ededb07aa83267e0a596c"
+  license "MIT"
 
   depends_on "go" => :build
 
