@@ -1,4 +1,6 @@
 class MusicLibrarian < Formula
+    include Language::Python::Virtualenv
+
     desc "Python tool for managing and organizing music libraries"
     homepage "https://github.com/czr/music-librarian"
     url "https://github.com/czr/music-librarian/archive/refs/tags/v1.0.0.tar.gz"
@@ -11,18 +13,11 @@ class MusicLibrarian < Formula
     depends_on "rsgain"
 
     def install
-      # Create a virtual environment in the formula's libexec
-      venv = virtualenv_create(libexec, "python3.13")
-
-      # Install the package and its dependencies into the virtual environment
-      venv.pip_install resources
-      venv.pip_install_and_link buildpath
+        virtualenv_install_with_resources
     end
 
     test do
-      # Add a simple test to verify the installation works
-      system bin/"music-librarian", "--version"
-      # Or test importing the module if it's library-focused
-      # system libexec/"bin/python", "-c", "import music_librarian"
+        # Add a simple test to verify the installation works
+        system bin/"music-librarian", "--version"
     end
-  end
+end
