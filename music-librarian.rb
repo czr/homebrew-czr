@@ -6,7 +6,7 @@ class MusicLibrarian < Formula
   url "https://github.com/czr/music-librarian/archive/refs/tags/v1.2.2.tar.gz"
   # Create the release in Github and regenerate with
   # `curl https://github.com/czr/music-librarian/archive/refs/tags/vX.Y.Z.tar.gz | sha256sum`
-  sha256 "451966960ffdb6b0cfeb28cd99162fb1c2f9700c7073568ef8fcb6d3ccfe9d81"
+  sha256 "e1e5fb849cfbfadc684082507f4002f083a6999e77cdea8fb4de64cb92ff39d6"
   license "MIT"
   head "https://github.com/czr/music-librarian.git", branch: "main"
 
