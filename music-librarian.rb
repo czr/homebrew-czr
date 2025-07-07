@@ -3,10 +3,10 @@ class MusicLibrarian < Formula
 
   desc "Python tool for managing and organizing music libraries"
   homepage "https://github.com/czr/music-librarian"
-  url "https://github.com/czr/music-librarian/archive/refs/tags/v1.2.2.tar.gz"
+  url "https://github.com/czr/music-librarian/archive/refs/tags/v1.2.3.tar.gz"
   # Create the release in Github and regenerate with
   # `curl https://github.com/czr/music-librarian/archive/refs/tags/vX.Y.Z.tar.gz | sha256sum`
-  sha256 "e1e5fb849cfbfadc684082507f4002f083a6999e77cdea8fb4de64cb92ff39d6"
+  sha256 "4527d8951352afa07d519d1d51aeb53661aaaab7bf2c6cf40dfc686d990ba884"
   license "MIT"
   head "https://github.com/czr/music-librarian.git", branch: "main"
 
